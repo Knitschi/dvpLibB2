@@ -1,8 +1,8 @@
 #pragma once
 
-#include <dpvLibB2/dpvLibB2_export.h>
+#include <dvpLibB2/dvpLibB2_export.h>
 
 namespace dpvLibB2
 {
-	DPVLIBB2_EXPORT void function();
+	DVPLIBB2_EXPORT void function();
 }
