@@ -7,7 +7,7 @@
 
 #include <dvpLibB2/dvpLibB2_export.h>
 
-namespace dpvLibB2
+namespace dvpLibB2
 {
 	DVPLIBB2_EXPORT void b2UseValueType(dvpLibC::ValueType value);
 	DVPLIBB2_EXPORT dvpLibC::ValueType b2ReturnValueType();
