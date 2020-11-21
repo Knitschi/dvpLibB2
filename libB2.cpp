@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace dpvLibB2
+namespace dvpLibB2
 {
 
 	void b2UseValueType(dvpLibC::ValueType value)
