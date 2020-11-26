@@ -1,4 +1,4 @@
-#include <dvpLibB2_1_0_0/libB2.h>
+#include VERSIONED_PATH(dvpLibB2_self, libB2.h)
 
 #include <iostream>
 

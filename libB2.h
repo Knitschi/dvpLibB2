@@ -2,10 +2,10 @@
 
 #include <memory>
 
-#include <dvpLibC_1_1_0/ValueType.h>
-#include <dvpLibC_1_1_0/ComplexType.h>
+#include VERSIONED_PATH(dvpLibC_direct, ValueType.h)
+#include VERSIONED_PATH(dvpLibC_direct, ComplexType.h)
 
-#include <dvpLibB2_1_0_0/dvpLibB2_export.h>
+#include VERSIONED_PATH(dvpLibB2_self, dvpLibB2_export.h)
 
 namespace dvpLibB2_1_0_0
 {
