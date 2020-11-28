@@ -14,12 +14,12 @@
 
 CPF_VERSIONED_NAMESPACE(dvpLibB2Ver)
 {
-	DVPLIBB2_1_0_0_EXPORT void b2UseValueType(dvpLibC_1_1_0::ValueType value);
-	DVPLIBB2_1_0_0_EXPORT dvpLibC_1_1_0::ValueType b2ReturnValueType();
+	DVPLIBB2_1_0_0_EXPORT void b2UseValueType(dvpLibCVer::ValueType value);
+	DVPLIBB2_1_0_0_EXPORT dvpLibCVer::ValueType b2ReturnValueType();
 
-	DVPLIBB2_1_0_0_EXPORT void b2UseComplexType(dvpLibC_1_1_0::ComplexType* value);
-	DVPLIBB2_1_0_0_EXPORT dvpLibC_1_1_0::ComplexType* b2ReturnComplexType();
+	DVPLIBB2_1_0_0_EXPORT void b2UseComplexType(dvpLibCVer::ComplexType* value);
+	DVPLIBB2_1_0_0_EXPORT dvpLibCVer::ComplexType* b2ReturnComplexType();
 
-	DVPLIBB2_1_0_0_EXPORT void b2SetComplexType(std::unique_ptr<dvpLibC_1_1_0::ComplexType> value);
-	DVPLIBB2_1_0_0_EXPORT std::unique_ptr<dvpLibC_1_1_0::ComplexType> b2CreateComplexType();
+	DVPLIBB2_1_0_0_EXPORT void b2SetComplexType(std::unique_ptr<dvpLibCVer::ComplexType> value);
+	DVPLIBB2_1_0_0_EXPORT std::unique_ptr<dvpLibCVer::ComplexType> b2CreateComplexType();
 }
