@@ -17,20 +17,16 @@ set( PACKAGE_PRODUCTION_FILES
 	libB2.cpp
 )
 
-set(dvpLibC_direct dvpLibC_1_1_0)
-
 ############################################## Add Package #################################
 cpfAddCppPackage( 
 	TYPE					LIB
 	OWNER 					Knitschi
 	BRIEF_DESCRIPTION		${briefDescription}
 	LONG_DESCRIPTION		${longDescription}
-	PACKAGE_NAMESPACE		dvpLibB2
+	PACKAGE_NAMESPACE		${PROJECT_NAME}
 	PUBLIC_HEADER			${PACKAGE_PUBLIC_HEADER}
 	PRODUCTION_FILES		${PACKAGE_PRODUCTION_FILES}
-	LINKED_LIBRARIES		${dvpLibC_direct}
+	LINKED_LIBRARIES		dvpLibC_1_1_0
 )
 
 cpfSetupInCodeVersionMechanism()
-
-target_compile_definitions(${PROJECT_NAME} PRIVATE dvpLibC_direct=${dvpLibC_direct})

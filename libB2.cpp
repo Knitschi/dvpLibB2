@@ -1,8 +1,10 @@
-#include VERSIONED_PATH(dvpLibB2_self, libB2.h)
+
+#define dvpLibB2Ver dvpLibB2_1_0_0
+#include CPF_VERSIONED_INCLUDE(dvpLibB2Ver, libB2.h)
 
 #include <iostream>
 
-namespace dvpLibB2_1_0_0
+CPF_VERSIONED_NAMESPACE(dvpLibB2Ver)
 {
 
 	void b2UseValueType(dvpLibC_1_1_0::ValueType value)
