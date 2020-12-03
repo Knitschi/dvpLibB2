@@ -11,6 +11,7 @@ set( longDescription "" )
 
 set( PACKAGE_PUBLIC_HEADER
 	libB2.h
+	dvpLibB2VersionMacros.h
 )
 
 set( PACKAGE_PRODUCTION_FILES
@@ -26,7 +27,7 @@ cpfAddCppPackage(
 	PACKAGE_NAMESPACE		${PROJECT_NAME}
 	PUBLIC_HEADER			${PACKAGE_PUBLIC_HEADER}
 	PRODUCTION_FILES		${PACKAGE_PRODUCTION_FILES}
-	LINKED_LIBRARIES		dvpLibC_1_1_0
+	LINKED_LIBRARIES		dvpLibC_2_2_0
 )
 
 cpfSetupInCodeVersionMechanism()

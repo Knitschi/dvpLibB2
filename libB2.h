@@ -1,25 +1,21 @@
 #pragma once
+#include "dvpLibB2VersionMacros.h"
 
 #include <memory>
 
+#include CPF_VERSIONED_INCLUDE(dvpLibC, ValueType.h)
+#include CPF_VERSIONED_INCLUDE(dvpLibC, ComplexType.h)
 
-#undef dvpLibCVer
-#define dvpLibCVer dvpLibC_1_1_0
-#include CPF_VERSIONED_INCLUDE(dvpLibCVer, ValueType.h)
-#include CPF_VERSIONED_INCLUDE(dvpLibCVer, ComplexType.h)
+#include CPF_VERSIONED_INCLUDE(dvpLibB2, dvpLibB2_1_0_0_export.h)
 
-#undef dvpLibB2Ver
-#define dvpLibB2Ver dvpLibB2_1_0_0
-#include CPF_VERSIONED_INCLUDE(dvpLibB2Ver, dvpLibB2_1_0_0_export.h)
-
-CPF_VERSIONED_NAMESPACE(dvpLibB2Ver)
+CPF_VERSIONED_NAMESPACE(dvpLibB2)
 {
-	DVPLIBB2_1_0_0_EXPORT void b2UseValueType(dvpLibCVer::ValueType value);
-	DVPLIBB2_1_0_0_EXPORT dvpLibCVer::ValueType b2ReturnValueType();
+	DVPLIBB2_1_0_0_EXPORT void b2UseValueType(dvpLibC::ValueType value);
+	DVPLIBB2_1_0_0_EXPORT dvpLibC::ValueType b2ReturnValueType();
 
-	DVPLIBB2_1_0_0_EXPORT void b2UseComplexType(dvpLibCVer::ComplexType* value);
-	DVPLIBB2_1_0_0_EXPORT dvpLibCVer::ComplexType* b2ReturnComplexType();
+	DVPLIBB2_1_0_0_EXPORT void b2UseComplexType(dvpLibC::ComplexType* value);
+	DVPLIBB2_1_0_0_EXPORT dvpLibC::ComplexType* b2ReturnComplexType();
 
-	DVPLIBB2_1_0_0_EXPORT void b2SetComplexType(std::unique_ptr<dvpLibCVer::ComplexType> value);
-	DVPLIBB2_1_0_0_EXPORT std::unique_ptr<dvpLibCVer::ComplexType> b2CreateComplexType();
+	DVPLIBB2_1_0_0_EXPORT void b2SetComplexType(std::unique_ptr<dvpLibC::ComplexType> value);
+	DVPLIBB2_1_0_0_EXPORT std::unique_ptr<dvpLibC::ComplexType> b2CreateComplexType();
 }
