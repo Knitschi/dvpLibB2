@@ -1,5 +1,5 @@
 
-#include "dvpLibB2VersionMacros.h"
+#include "dvpLibB2DependencyNames.h"
 #include CPF_VERSIONED_INCLUDE(dvpLibB2, libB2.h)
 
 #include <iostream>

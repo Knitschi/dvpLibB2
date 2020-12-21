@@ -11,7 +11,6 @@ set( longDescription "" )
 
 set( PACKAGE_PUBLIC_HEADER
 	libB2.h
-	dvpLibB2VersionMacros.h
 )
 
 set( PACKAGE_PRODUCTION_FILES
