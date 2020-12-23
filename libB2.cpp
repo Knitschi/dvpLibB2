@@ -1,5 +1,5 @@
 
-#include "dvpLibB2DependencyNames.h"
+#include "dvpLibB2DependencyNamesPrivate.h"
 #include CPF_VERSIONED_INCLUDE(dvpLibB2, libB2.h)
 
 #include <iostream>
